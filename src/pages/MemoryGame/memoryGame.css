@@ -1,0 +1,26 @@
+.div-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  max-width: 1000px;
+  height: 100%;
+  gap: 20px;
+}
+
+.card-on {
+  width: 140px;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 20px;
+  background-color: var(--gh-background-primary);
+}
+
+.card-off {
+  width: 140px;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 20px;
+  background-color: #62d976;
+}

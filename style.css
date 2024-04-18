@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root {
+  /*FONT*/
+  --gh-font-one: "Press Start 2P";
+  --gh-font-two: 'Honk';
+  --gh-font-three: 'Audiowide';
+  --gh-font-four: 'Luckiest Guy';
+
+  /*COLOR*/
+  --gh-color-primary: #ffffff;
+  --gh-color-secondary: #fd7301;
+  --gh-color-tertiary: #33ff00;
+
+  /*BACKGROUND*/
+  --gh-background-primary: #e2ebdf;
+  --gh-background-secondary: #edf6f9;
+  --gh-background-tertiary: #83c5be;
+
+  /*MARGIN*/
+  --gh-margin-xxs: 10px;
+  --gh-margin-xs: 20px;
+  --gh-margin-s: 30px;
+  --gh-margin-m: 40px;
+  --gh-margin-l: 50px;
+  --gh-margin-xl: 60px;
+  --gh-margin-xxl: 70px;
+
+  /*PADDING*/
+  --gh-padding-xxs: 10px;
+  --gh-padding-xs: 20px;
+  --gh-padding-s: 30px;
+  --gh-padding-m: 40px;
+  --gh-padding-l: 50px;
+  --gh-padding-xl: 60px;
+  --gh-padding-xxl: 70px;
+
+  /*GAP*/
+  --gh-gap-xxs: 10px;
+  --gh-gap-xs: 20px;
+  --gh-gap-s: 30px;
+  --gh-gap-m: 40px;
+  --gh-gap-l: 50px;
+  --gh-gap-xl: 60px;
+  --gh-gap-xxl: 70px;
+
+  /*BORDER*/
+  --gh-border-xxs: 5px;
+  --gh-border-xs: 10px;
+  --gh-border-s: 15px;
+  --gh-border-m: 20px;
+  --gh-border-l: 25px;
+  --gh-border-xl: 30px;
+  --gh-border-xxl: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100svh;
+  /* height: 100%; */
+  background-image: url(./public/salon1.webp);
+  /* background-size: auto; */
+  font-family: var(--gh-font-one);
+  color: var(--gh-color-primary);
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#divContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 100px;
+}

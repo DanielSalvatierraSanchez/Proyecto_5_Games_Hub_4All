@@ -1,0 +1,13 @@
+#header {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-header {
+  color: var(--gh-color-tertiary);
+}
