@@ -2,22 +2,21 @@ import './memoryGame.css';
 import { cards } from "../../../utils/dataMemoryGame";
 import { buttonOfReset } from './Reset/buttonReset';
 
-// seleccionar contenedores
-const divApp = document.querySelector("#app");
-const divContainer = document.querySelector('#divContainer');
-const divCard = document.querySelector('.div-card');
-
 // imagen predefinida como carta por defecto
 const imageDefaultCard = '../../../memory/tmnt.webp';
 
-// VAr para comprobar si 2 cartas si son iguales
-const compareCards = (firstCard, secondCard) => firstCard.id === secondCard.id;
+// VAR para comprobar si 2 cartas si son iguales
+const compareCards = (firstCard, secondCard) => firstCard === secondCard;
 
-// VAR para comprobar si el juego ha terminado - si las parejas son length de cartas / 2 - limpiar DIVs
+// crear contenedor de cartas para usarlo en las function inicial (checkWinGame)
+// VAR para comprobar si el juego ha terminado y si las parejas son "length de cartas / 2" se limpiaran los DIVs
+let divCard;
 const checkWinGame = (pairsCount, totalPairs) => {
   if (pairsCount === totalPairs) {
     console.log('¡¡¡ HAS GANADO !!! JUEGO TERMINADO');
+    divCard = document.createElement('div');
     divCard.innerHTML = "";
+    const divContainer = document.querySelector('#divContainer');
     divContainer.innerHTML = `
     <h2 class="win-memory-game" >¡¡¡ HAS GANADO !!! JUEGO TERMINADO</h2>
     <h2 class="win-memory-game" >CARGANDO NUEVA PARTIDA...</h2>
@@ -25,10 +24,18 @@ const checkWinGame = (pairsCount, totalPairs) => {
 
     // crear Timeout para que vacie todo y crear nuevo juego
     setTimeout(() => {
+      const divApp = document.querySelector("#app");
       divApp.innerHTML = '';
-      createMemory();
+      createMemory(cards.sort(() => Math.random() - 0.5 ));
     }, 4000);
   };
+};
+
+const clearCard = (card) => {
+  console.log(card);
+  card.classList.add("card-off");
+  card.classList.remove("card-on");
+  card.src = imageDefaultCard;
 };
 
 // crear memory game
@@ -42,7 +49,7 @@ export function createMemory() {
   divContainer.innerHTML = "";
   
   // crear DIV de las cartas
-  const divCard = document.createElement('div');
+  divCard = document.createElement('div');
   divCard.classList = "div-card";
   
   // crear VAR1 y VAR2 para las cartas que puedo seleccionar a la vez y controlar las parejas
@@ -69,46 +76,46 @@ export function createMemory() {
         return console.log('CARTA DESCUBIERTA, ELIGE OTRA');
       };
       if (!firstCard) {
-        firstCard = card;
         cardOff.classList.add('card-on');
         cardOff.classList.remove('card-off');
         cardOff.src = card.img;
+        firstCard = cardOff; 
+        console.log(card);
+        console.log(cardOff);
+        console.log(firstCard);
+        console.log(secondCard);
         console.log('HAS LEVANTADO UNA CARTA, LEVANTA OTRA');
       } else if (!secondCard && card !== firstCard) {
         // comprobar 2a carta, si no hay 2a carta se almacena en la VAR2 y se cambia la class de la carta
-          secondCard = card;
-          cardOff.classList.add('card-on');
-          cardOff.classList.remove('card-off');
-          cardOff.src = card.img;
+        cardOff.classList.add('card-on');
+        cardOff.classList.remove('card-off');
+        cardOff.src = card.img;
+        secondCard = cardOff;
+        console.log(card);
+        console.log(cardOff);
+        console.log(firstCard);
+        console.log(secondCard);
           console.log('HAS LEVANTADO LA SEGUNDA CARTA, SIGUE JUGANDO');
           // comparar las 2 cartas, si las 2 cartas son iguales por ID añadir 1 pareja (pairs)
           //if (firstCard.id === secondCard.id) {
-          if (compareCards(firstCard, secondCard)) {
+          if (compareCards(firstCard.id, secondCard.id)) {
             pairsCount++;
+            console.log(pairsCount);
             console.log('NUMERO DE PAREJAS ACERTADAS: ' + pairsCount);
             // comprobar fin del juego, si las parejas son length de cartas / 2 - limpiar DIVs
             checkWinGame(pairsCount, cards.length / 2);
-            /*
-            //if (pairs === cards.length / 2) {
-              //console.log('¡¡¡ HAS GANADO !!! JUEGO TERMINADO');
-              //divCard.innerHTML = "";
-              //divContainer.innerHTML = `<h2 class="win-memory-game" >¡¡¡ HAS GANADO !!! JUEGO TERMINADO</h2>`;
-            //}
-            */
+            firstCard = null;
+            secondCard = null;
           } else {
             // como las cartas no son iguales, voltearlas nuevamente después de un tiempo
             setTimeout(() => {
-              cardOff.classList.add('card-off');
-              cardOff.classList.remove('card-on');
-              cardOff.src = imageDefaultCard;
-              cardOff.previousElementSibling.classList.add('card-off');
-              cardOff.previousElementSibling.classList.remove('card-on');
-              cardOff.previousElementSibling.src = imageDefaultCard;
-            }, 1000);
+              clearCard(firstCard);
+              clearCard(secondCard);
+              firstCard = null;
+              secondCard = null;
+            }, 2000);
           }
-        firstCard = null;
-        secondCard = null;
-        };
+        }
       });
     divCard.append(cardOff);
   });
