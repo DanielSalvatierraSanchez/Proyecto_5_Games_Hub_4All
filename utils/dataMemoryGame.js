@@ -18,5 +18,5 @@ export let cards = [
   { id: 8, img: '../memory/Bebop.webp' },
   { id: 9, img: '../memory/Rocksteady.webp' }
 ];
-cards = cards.sort(() => { return Math.random() - 0.5 });
-console.log(cards);
+//cards.sort(() => Math.random() - 0.5 );
+//cards = cards.sort(() => { return Math.random() - 0.5 });
