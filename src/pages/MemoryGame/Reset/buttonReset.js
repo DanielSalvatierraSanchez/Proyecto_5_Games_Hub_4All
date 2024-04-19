@@ -1,4 +1,5 @@
 import './buttonReset.css';
+import { cards } from "../../../../utils/dataMemoryGame";
 import { createMemory } from '../memoryGame';
 
 export function buttonOfReset() {
@@ -19,7 +20,7 @@ export function buttonOfReset() {
     <h2 class="reset-memory-game" >CARGANDO NUEVA PARTIDA...</h2>`;
     setTimeout(() => {
       divApp.innerHTML = '';
-      createMemory();
+      createMemory(cards.sort(() => Math.random() - 0.5 ));
     }, 4000);
   });
 
