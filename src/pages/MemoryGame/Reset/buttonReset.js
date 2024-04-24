@@ -14,7 +14,6 @@ export function buttonOfReset() {
   buttonReset.textContent = 'REINICIAR JUEGO';
   
   buttonReset.addEventListener('click', () => {
-    console.log('¡¡¡ JUEGO REINICIADO !!!');
     divContainer.innerHTML = `
     <h2 class="reset-memory-game" >¡¡¡ JUEGO REINICIADO !!!</h2>
     <h2 class="reset-memory-game" >CARGANDO NUEVA PARTIDA...</h2>`;
