@@ -1,0 +1,174 @@
+#div-ppt {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: var(--gh-gap-s);
+  height: 100vh;
+}
+
+#players-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gh-gap-m);
+  margin-top: var(--gh-margin-xs);
+  margin-bottom: 6rem;
+}
+
+#image-player-selection, #image-opponent-selection {
+  width: 7.3rem;
+  height: 7.3rem;
+  border-radius: var(--gh-border-m);
+  cursor: no-drop;
+  object-fit: cover;
+}
+
+#result-text {
+  color: var(--gh-color-secondary);
+  cursor: no-drop;
+  text-shadow: var(--gh-text-neon);
+}
+
+.play-win, .play-lose {
+  color: var(--gh-color-tertiary);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+  text-align: center;
+}
+
+#title-ppt {
+  color: var(--gh-color-final);
+  text-shadow: var(--gh-text-neon);
+  /* font-size: x-large; */
+  cursor: no-drop;
+}
+
+#menu-btn > button {
+margin: 0rem var(--gh-margin-l);
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+button > img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.games-win, .games-lose {
+  margin-top: var(--gh-margin-xs);
+  color: var(--gh-color-secondary);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 600px) {
+  #players-selection {
+    margin-bottom: 9rem;
+  }
+
+  #menu-btn > button {
+    margin: 0rem var(--gh-margin-m);
+  }
+
+  #image-player-selection, #image-opponent-selection {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  button {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  button > img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+}
+
+@media (width <= 435px) {
+  #players-selection {
+    margin-bottom: var(--gh-margin-l);
+  }
+  
+  #title-ppt {
+    margin-top: var(--gh-margin-s);
+    font-size: medium;
+  }
+
+  #menu-btn > button {
+    display: flex;
+    flex-direction: column;
+    margin: var(--gh-margin-xs) 0rem;
+  }
+
+  #image-player-selection, #image-opponent-selection {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  button {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  button > img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+
+  .games-win, .games-lose {
+    margin-top: var(--gh-margin-xxs);
+    text-align: center;
+  }
+}
+
+@media (width <= 350px) {
+  #result-text {
+    /* font-size: medium; */
+    /* margin: 0rem 2rem; */
+    text-align: center;
+  }
+
+  #title-ppt {
+    /* font-size: small; */
+    margin: 0rem var(--gh-margin-m);
+    text-align: center;
+    line-height: 1.5rem;
+  }
+
+  .games-win, .games-lose {
+    margin: 1rem var(--gh-margin-m);
+    font-size: small;
+    line-height: 1.5rem;
+  }
+
+  #image-player-selection, #image-opponent-selection {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  button {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  button > img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+  }
+}

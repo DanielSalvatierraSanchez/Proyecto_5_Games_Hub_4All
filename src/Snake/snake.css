@@ -1,0 +1,21 @@
+#game-snake {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.table {
+  width: 30rem;
+  height: 30rem;
+  background-color: white;
+  top: 0;
+  z-index: 2;
+}
+
+.ground {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  display: grid;
+  grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+}
