@@ -8,12 +8,57 @@
 }
 
 .menu-game-memory:hover, .menu-game-ppt:hover, .menu-game-bingo:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
+  /* transform: scale(1.2); */
+  -webkit-animation: tiembla 1s infinite;
+}
+
+@-webkit-keyframes tiembla {
+  0% { -webkit-transform:rotateZ(5deg)}
+  50% { -webkit-transform:rotateZ(0deg) scale(1.2);}
+  100%{ -webkit-transform:rotateZ(-5deg)}
 }
 
 .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
   width: 250px;
   height: 400px;
   object-fit: fill;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 1030px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 200px;
+    height: 325px;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 200px;
+    height: 325px;
+  }
+}
+
+@media (width <= 880px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 150px;
+    height: 250px;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 150px;
+    height: 250px;
+  }
+}
+
+@media (width <= 610px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 100px;
+    height: 175px;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 100px;
+    height: 175px;
+  }
 }

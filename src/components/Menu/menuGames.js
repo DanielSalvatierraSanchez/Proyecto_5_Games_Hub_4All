@@ -18,5 +18,9 @@ export const createMenuGames = (divApp) => {
     divApp.append(linkCard);
     
     linkCard.addEventListener('click', menuGame.link);
+    linkCard.addEventListener('click', () => {
+      footer.style.display = 'none';
+      app.style.display = 'none';
+    });
   };
 };
