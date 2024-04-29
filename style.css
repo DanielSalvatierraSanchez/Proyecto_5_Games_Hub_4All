@@ -10,10 +10,22 @@
   --gh-font-three: 'Audiowide';
   --gh-font-four: 'Luckiest Guy';
 
+  /*TEXT STYLE*/
+  --gh-text-neon: 
+  0 0 5px #fff,
+  0 0 10px #fff,
+  0 0 20px #fff,
+  0 0 40px #0ff,
+  0 0 80px #0ff,
+  0 0 90px #0ff,
+  0 0 100px #0ff,
+  0 0 150px #0ff;
+
   /*COLOR*/
   --gh-color-primary: #ffffff;
   --gh-color-secondary: #fd7301;
   --gh-color-tertiary: #33ff00;
+  --gh-color-final: #df0aa3;
 
   /*BACKGROUND*/
   --gh-background-primary: #e2ebdf;
@@ -21,40 +33,40 @@
   --gh-background-tertiary: #83c5be;
 
   /*MARGIN*/
-  --gh-margin-xxs: 10px;
-  --gh-margin-xs: 20px;
-  --gh-margin-s: 30px;
-  --gh-margin-m: 40px;
-  --gh-margin-l: 50px;
-  --gh-margin-xl: 60px;
-  --gh-margin-xxl: 70px;
+  --gh-margin-xxs: 0.6rem;
+  --gh-margin-xs: 1.3rem;
+  --gh-margin-s: 1.6rem;
+  --gh-margin-m: 2rem;
+  --gh-margin-l: 3rem;
+  --gh-margin-xl: 4rem;
+  --gh-margin-xxl: 5rem;
 
   /*PADDING*/
-  --gh-padding-xxs: 10px;
-  --gh-padding-xs: 20px;
-  --gh-padding-s: 30px;
-  --gh-padding-m: 40px;
-  --gh-padding-l: 50px;
-  --gh-padding-xl: 60px;
-  --gh-padding-xxl: 70px;
+  --gh-padding-xxs: 0.6rem;
+  --gh-padding-xs: 1.3rem;
+  --gh-padding-s: 1.6rem;
+  --gh-padding-m: 2rem;
+  --gh-padding-l: 3rem;
+  --gh-padding-xl: 4rem;
+  --gh-padding-xxl: 5rem;
 
   /*GAP*/
-  --gh-gap-xxs: 10px;
-  --gh-gap-xs: 20px;
-  --gh-gap-s: 30px;
-  --gh-gap-m: 40px;
-  --gh-gap-l: 50px;
-  --gh-gap-xl: 60px;
-  --gh-gap-xxl: 70px;
+  --gh-gap-xxs: 0.6rem;
+  --gh-gap-xs: 1rem;
+  --gh-gap-s: 1.5rem;
+  --gh-gap-m: 2rem;
+  --gh-gap-l: 3rem;
+  --gh-gap-xl: 4rem;
+  --gh-gap-xxl: 5rem;
 
   /*BORDER*/
-  --gh-border-xxs: 5px;
-  --gh-border-xs: 10px;
-  --gh-border-s: 15px;
-  --gh-border-m: 20px;
-  --gh-border-l: 25px;
-  --gh-border-xl: 30px;
-  --gh-border-xxl: 35px;
+  --gh-border-xxs: 0.3rem;
+  --gh-border-xs: 0.6rem;
+  --gh-border-s: 1rem;
+  --gh-border-m: 1.3rem;
+  --gh-border-l: 1.6rem;
+  --gh-border-xl: 2rem;
+  --gh-border-xxl: 3rem;
 }
 
 * {
@@ -62,38 +74,72 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
+  list-style: none; 
+}
+
+html {
+  background-image: url(./screen.webp);
+  background-size: cover;
 }
 
 body {
-  width: 100%;
-  height: 100svh;
-  /* height: 100%; */
-  background-image: url(./public/salon1.webp);
-  /* background-size: auto; */
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(./screen.webp);
+  background-size: cover; */
   font-family: var(--gh-font-one);
-  color: var(--gh-color-primary);
   overflow: hidden;
-}
-
-header {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
 }
 
 #app {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: var(--gh-gap-l);
+}
+
+#app > a {
+    margin: 200px 30px 100px 30px;
 }
 
 #divContainer {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  margin: 80px 0px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 1030px) {
+  #app {
+    gap: 0;
+  }
+}
+
+@media (width <= 880px) {
+  #app > a {
+    margin: 250px 20px 100px 20px;
+  }
+}
+
+@media (width <= 610px) {
+  #app > a {
+    margin-top: 20rem;
+  }
+}
+
+@media (width <= 430px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  #app > a {
+    margin: 20px 10px;
+  }
 }
