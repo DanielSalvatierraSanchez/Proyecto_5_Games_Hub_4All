@@ -47,15 +47,13 @@ El usuario podrá elegir que jugar en ese turno y tendremos dos contadores, uno 
 Estas cantidades las guardaremos en el localStorage para que la siguiente vez que abramos la aplicación sigamos viendo el mismo conteo
 
 
-Trivial
-
-Para el trivial tendremos una serie de preguntas, cada pregunta tendrá "x" posibles respuestas y únicamente una de ellas será verdadera.
-Además, tendremos un botón para comprobar todas las respuestas al mismo tiempo y ver la nota que hemos sacado en un alert, podéis elegir la temática y estilos que prefiráis, sin embargo aquí os mostramos un ejemplo funcional: ejemplo
-
-
 Bingo!
 
 Para el juego del Bingo tendremos un botón para iniciar el juego, una vez esté iniciado se quitará ese botón y aparecerá uno de pausar partida, si pausamos aparecerá uno de reiniciar partida y otro de reanudarla.
 Además, tendremos una serie de números que irán saliendo en pantalla, los cuales NO se pueden repetir y un panel que me indique que números han ido saliendo.
 Os aportamos un ejemplo: ejemplo
 No hará falta que hagáis el tema de las voces, sin embargo os aportamos el nombre de la herramienta por si queréis buscar cómo poder hacer que la propia página os "hable" o "cante" los números: SpeechSynthesisUtterance
+
+Snake
+
+Proximamente...
