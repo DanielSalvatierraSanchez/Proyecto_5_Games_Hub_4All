@@ -1,0 +1,7 @@
+.win-memory-game {
+  margin: var(--gh-margin-l);
+  text-align: center;
+  color: var(--gh-color-final);
+  text-shadow: var(--gh-text-neon);
+  line-height: 3rem;
+}

@@ -1,0 +1,40 @@
+.the-end {
+  display: flex;
+  align-items: center;
+  color: var(--gh-color-final);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+}
+
+.image-the-end {
+  margin: 0 3rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 815px) {
+  .image-the-end {
+    margin: 0 3rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (width <= 650px) {
+  .the-end {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    line-height: 3rem;
+  }
+}
+
+@media (width <= 400px) {
+  .the-end {
+    margin: 50vw;
+    text-align: center;
+  }
+}

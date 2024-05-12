@@ -1,0 +1,48 @@
+.div-balls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.3rem;
+  background-image: url('./../../../bingo/bombo4.webp');
+  background-size: contain;
+  border-radius: 6rem;
+}
+
+.selected {
+  background-color: var(--gh-color-tertiary);
+  background-image: none;
+  border-radius: 6rem;
+}
+
+.selected > p {
+  opacity: 1;
+}
+
+.ball-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 1000px) {
+  .div-balls {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (width <= 525px) {
+  .div-balls {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .ball-number {
+    font-size: 0.6rem;
+  }
+}

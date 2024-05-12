@@ -1,0 +1,120 @@
+#divContainer {
+  flex-direction: column;
+}
+
+#div-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90rem;
+  height: 90vh;
+  padding: 0 var(--gh-padding-xxs);
+  gap: var(--gh-gap-l);
+  overflow: hidden;
+}
+
+.card-on {
+  width: 120px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: var(--gh-border-m);
+  background-color: var(--gh-background-primary);
+  cursor: no-drop;
+}
+
+.card-off {
+  width: 7.3rem;
+  height: 9rem;
+  object-fit: contain;
+  border-radius: var(--gh-border-m);
+  background-color: var(--gh-background-card);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.card-off:hover {
+  transform:scale(1.1);
+  transition: all 0.5s;
+  box-shadow: 0 0 0.3rem 0.3rem var(--gh-color-final);
+  background-color: var(--gh-background-primary);
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 1050px) {
+  .card-on {
+    width: 6rem;
+    height: 8rem;
+  }
+  
+  .card-off {
+    width: 6rem;
+    height: 8rem;
+  }
+}
+
+@media (width <= 920px) {
+  .card-on {
+    width: 6rem;
+    height: 7.3rem;
+  }
+  
+  .card-off {
+    width: 6rem;
+    height: 7.3rem;
+  }
+}
+
+@media (width <= 665px) {
+  .card-on {
+    width: 5rem;
+    height: 6rem;
+  }
+  
+  .card-off {
+    width: 5rem;
+    height: 6rem;
+  }
+}
+
+@media (width <= 565px) {
+  #div-card {
+    gap: var(--gh-gap-m);
+  } 
+}
+
+@media (width <= 499px) {
+  #div-card {
+    padding: var(--gh-padding-xxs) var(--gh-padding-xxs);
+  } 
+}
+
+@media (width <= 397px) {
+  #div-card {
+    gap: var(--gh-gap-s);
+  } 
+
+  .card-on {
+    width: 4rem;
+    height: 6rem;
+  }
+  
+  .card-off {
+    width: 4rem;
+    height: 6rem;
+  }
+}
+
+@media (width <= 250px) {
+  .card-on {
+    width: 3rem;
+    height: 5rem;
+  }
+  
+  .card-off {
+    width: 3rem;
+    height: 5rem;
+  }
+}

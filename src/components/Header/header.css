@@ -1,0 +1,44 @@
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.title-header {
+  color: var(--gh-color-final);
+  text-shadow: var(--gh-text-neon);
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 880px) {
+  .title-header {
+    font-size: x-large;
+  }
+}
+
+@media (width <= 500px) {
+  .title-header {
+    font-size: large;
+  }
+}
+
+@media (width <= 350px) {
+  .title-header {
+    font-size: medium;
+  }
+}
+
+@media (width <= 250px) {
+  .title-header {
+    margin: 0rem 4rem;
+  }
+}

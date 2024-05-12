@@ -1,0 +1,178 @@
+#div-ppt {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: var(--gh-gap-s);
+  height: 100vh;
+}
+
+#players-selection {
+  display: flex;
+  align-items: center;
+  gap: var(--gh-gap-m);
+  margin-top: var(--gh-margin-xxl);
+  margin-bottom: 6rem;
+}
+
+.name-opponent, .name-player {
+  color: var(--gh-color-final);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+  text-align: center;
+}
+
+#image-player-selection, #image-opponent-selection {
+  width: 7.3rem;
+  height: 7.3rem;
+  border-radius: var(--gh-border-m);
+  cursor: no-drop;
+  object-fit: cover;
+}
+
+#result-text {
+  color: var(--gh-color-secondary);
+  cursor: no-drop;
+  text-shadow: var(--gh-text-neon);
+}
+
+#title-ppt {
+  color: var(--gh-color-final);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+}
+
+#menu-btn > button {
+margin: 0 var(--gh-margin-l);
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+  background: none;
+  border-style: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+button:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+button > img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.games-win {
+  margin-top: var(--gh-margin-xxl);
+  color: var(--gh-color-secondary);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+}
+
+.games-lose {
+  margin-top: var(--gh-margin-m);
+  color: var(--gh-color-secondary);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+}
+
+.play-win, .play-lose {
+  margin-top: 30vh;
+  color: var(--gh-color-tertiary);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+  text-align: center;
+  line-height: 4rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 920px) {
+  #players-selection {
+    flex-direction: column;
+    margin-top: var(--gh-margin-xxs);
+    margin-bottom: var(--gh-margin-s);
+  }
+
+  .games-win, .games-lose {
+    margin-top: var(--gh-margin-s);
+  }
+}
+
+@media (width <= 650px) {
+  #players-selection {
+    margin-bottom: var(--gh-margin-l);
+  }
+
+  #menu-btn > button {
+    margin: 0 var(--gh-margin-m);
+  }
+
+  #image-player-selection, #image-opponent-selection {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  #title-ppt {
+    font-size: large;
+  }
+
+  button {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  button > img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+
+  .games-win{
+    margin-top: var(--gh-margin-xl);
+  }
+}
+
+@media (width <= 435px) {
+  #menu-btn > button {
+    margin: 0 var(--gh-margin-s);
+  }
+}
+
+@media (width <= 350px) {
+  #title-ppt {
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .games-win{
+    margin-top: var(--gh-margin-xl);
+    font-size: small;
+  }
+
+  .games-lose {
+    margin-top: var(--gh-margin-s);
+    font-size: small;
+  }
+
+  #image-player-selection, #image-opponent-selection {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  button {
+    width: 3em;
+    height: 3rem;
+  }
+  
+  button > img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+  }
+}

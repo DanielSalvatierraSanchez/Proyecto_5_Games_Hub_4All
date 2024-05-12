@@ -1,0 +1,140 @@
+#bingo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: var(--gh-padding-m);
+}
+
+#actual-ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  background-color: var(--gh-color-final);
+  border-radius: 12rem;
+}
+
+#number-ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17rem;
+  height: 17rem;
+  background-color: var(--gh-background-secondary);
+  color: #000000;
+  border-radius: 9rem;
+  font-size: 7rem;
+}
+
+#table-balls {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-items: center;
+  cursor: default;
+  background-color: var(--gh-background-secondary);
+  border-radius: var(--gh-border-xl);
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: #000000;
+}
+
+#menu-options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30rem;
+  height: 9rem;
+}
+
+button {
+  font-family: var(--gh-font-one);
+  line-height: 1.3rem;
+}
+
+.play-button, .pause-button, .reset-button {
+  width: 9rem;
+  height: 3rem;
+  background-color: var(--gh-color-final);
+  color: var(--gh-color-primary);
+  border-radius: var(--gh-border-m);
+}
+
+.new-background {
+  background-color: var(--gh-color-tertiary);
+  color: #000000;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (width <= 1000px) {
+  #actual-ball {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  #number-ball {
+    width: 10rem;
+    height: 10rem;
+    font-size: 4rem;
+  }
+
+  #table-balls {
+    grid-template-columns: repeat(10, 3.3rem);
+  }
+}
+
+@media (width <= 790px) {
+  #bingo-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #actual-ball {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  #number-ball {
+    width: 7.6rem;
+    height: 7.6rem;
+    font-size: 3rem;
+  }
+}
+
+@media (width <= 525px) {
+  #table-balls {
+    grid-template-columns: repeat(10, 2rem);
+    border-radius: var(--gh-border-s);
+  }
+
+  .play-button, .pause-button, .reset-button {
+  width: 9rem;
+  height: 3rem;
+  border-radius: var(--gh-border-m);
+  }
+}
+
+@media (width <= 400px) {
+  .play-button, .pause-button, .reset-button {
+  width: 6rem;
+  height: 3rem;
+  font-size: xx-small;
+  }
+}
+
+@media (width <= 355px) {
+  #table-balls {
+    grid-template-columns: repeat(10, 2rem);
+    border-radius: var(--gh-border-xs);
+  }
+}
