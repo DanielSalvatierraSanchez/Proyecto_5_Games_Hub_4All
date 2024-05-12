@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 :root {
   /*FONT*/
-  --gh-font-one: "Press Start 2P";
-  --gh-font-two: 'Honk';
-  --gh-font-three: 'Audiowide';
-  --gh-font-four: 'Luckiest Guy';
+  --gh-font-arcade: "Press Start 2P";
 
   /*TEXT STYLE*/
   --gh-text-neon: 
@@ -21,16 +15,16 @@
   0 0 100px #0ff,
   0 0 150px #0ff;
 
-  /*COLOR*/
+  /*COLORS*/
   --gh-color-primary: #ffffff;
   --gh-color-secondary: #fd7301;
-  --gh-color-tertiary: #33ff00;
+  --gh-color-tertiary: #58e734;
   --gh-color-final: #df0aa3;
 
-  /*BACKGROUND*/
   --gh-background-primary: #e2ebdf;
   --gh-background-secondary: #edf6f9;
   --gh-background-tertiary: #83c5be;
+  --gh-background-card: #62d976;
 
   /*MARGIN*/
   --gh-margin-xxs: 0.6rem;
@@ -85,9 +79,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  /* background-image: url(./screen.webp);
-  background-size: cover; */
-  font-family: var(--gh-font-one);
+  font-family: var(--gh-font-arcade);
   overflow: hidden;
 }
 
@@ -99,7 +91,7 @@ body {
 }
 
 #app > a {
-    margin: 200px 30px 100px 30px;
+  margin: 12rem 2rem 6rem 2rem;
 }
 
 #divContainer {
@@ -108,7 +100,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 90vh;
-  margin: 80px 0px;
+  margin: 5rem 0;
 }
 
 
@@ -122,7 +114,7 @@ body {
 
 @media (width <= 880px) {
   #app > a {
-    margin: 250px 20px 100px 20px;
+    margin: 15rem 1.3rem 6rem 1.3rem;
   }
 }
 
@@ -140,6 +132,6 @@ body {
     margin-top: 6rem;
   }
   #app > a {
-    margin: 20px 10px;
+    margin: 1.3rem 0.6rem;
   }
 }
