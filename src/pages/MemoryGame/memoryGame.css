@@ -88,12 +88,13 @@
 @media (width <= 499px) {
   #div-card {
     padding: var(--gh-padding-xxs) var(--gh-padding-xxs);
+    gap: var(--gh-gap-s);
   } 
 }
 
-@media (width <= 397px) {
+@media (width <= 410px) {
   #div-card {
-    gap: var(--gh-gap-s);
+    gap: var(--gh-gap-xs);
   } 
 
   .card-on {
