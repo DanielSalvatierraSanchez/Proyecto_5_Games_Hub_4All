@@ -14,6 +14,7 @@ footer {
   color: var(--gh-color-final);
   text-shadow: var(--gh-text-neon);
   text-align: center;
+  line-height: 1.5em;
   cursor: default;
 }
 
@@ -94,17 +95,10 @@ a > .img-email, .img-github, .img-linkedin {
 @media (width <= 426px) {
   footer {
     flex-direction: column;
-    margin-bottom: 0;
-  }
-
-  .title-footer {
-    font-size: x-small;
-    line-height: 1.5em;
   }
 
   .ul-footer {
     justify-content: space-evenly;
-    width: 100vw;
   }
 
   a > .img-email, .img-github, .img-linkedin {
@@ -123,93 +117,3 @@ a > .img-email, .img-github, .img-linkedin {
     font-size: xx-small;
   }
 }
-/* @media (width <= 910px) {
-  footer {
-    flex-direction: column;
-    margin-bottom: var(--gh-margin-s);
-  }
-
-.title-footer {
-  font-size: small;
-  text-align: center;
-  margin-bottom: var(--gh-margin-s);
-}
-
-  .ul-footer {
-    justify-content: space-evenly;
-    width: 100vw;
-  }
-
-  a > .img-email, .img-github, .img-linkedin {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .link-email, .link-github, .link-linkedin {
-    width: 3rem;
-    height: 3rem;
-  }
-} */
-
-/* @media (width <= 520px) {
-  .title-footer {
-    font-size: medium;
-    line-height: 1.5em;
-  }
-
-  footer {
-    margin-bottom: var(--gh-margin-l);
-  }
-
-  a > .img-email, .img-github, .img-linkedin {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .link-email, .link-github, .link-linkedin {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-} */
-
-/* @media (width <= 395px) {
-  .title-footer {
-    font-size: small;
-    line-height: 1.5em;
-  }
-
-  footer {
-    margin-bottom: var(--gh-margin-s);
-  }
-
-  a > .img-email, .img-github, .img-linkedin {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .link-email, .link-github, .link-linkedin {
-    width: 2rem;
-    height: 2rem;
-  }
-} */
-
-/* @media (width <= 380px) {
-  .title-footer {
-    font-size: x-small;
-    line-height: 1.5em;
-  }
-
-  footer {
-    margin-bottom: var(--gh-margin-xxs);
-  }
-
-  a > .img-email, .img-github, .img-linkedin {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .link-email, .link-github, .link-linkedin {
-    width: 2rem;
-    height: 2rem;
-  }
-} */
