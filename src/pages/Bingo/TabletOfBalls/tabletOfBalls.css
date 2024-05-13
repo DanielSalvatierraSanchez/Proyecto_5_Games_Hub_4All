@@ -29,17 +29,29 @@
 
 /* MEDIA QUERIES */
 
-@media (width <= 1000px) {
+@media (width <= 1024px) {
   .div-balls {
     width: 3rem;
     height: 3rem;
   }
 }
 
+@media (width <= 850px) {
+  .div-balls {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.4rem;
+  }
+
+  .ball-number {
+    font-size: 0.8rem;
+  }
+}
+
 @media (width <= 525px) {
   .div-balls {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
   }
 
   .ball-number {
