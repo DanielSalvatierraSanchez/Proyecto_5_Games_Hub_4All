@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  gap: var(--gh-gap-s);
+  gap: var(--gh-gap-xxl);
+  width: 80vw;
   height: 100vh;
 }
 
@@ -11,7 +12,7 @@
   display: flex;
   align-items: center;
   gap: var(--gh-gap-m);
-  margin-top: var(--gh-margin-xxl);
+  margin-top: 15rem;
   margin-bottom: 6rem;
 }
 
@@ -92,19 +93,34 @@ button > img {
 
 /* MEDIA QUERIES */
 
-@media (width <= 920px) {
+@media (width <= 1440px) {
   #players-selection {
-    flex-direction: column;
-    margin-top: var(--gh-margin-xxs);
-    margin-bottom: var(--gh-margin-s);
-  }
-
-  .games-win, .games-lose {
-    margin-top: var(--gh-margin-s);
+    margin-top: 10rem;
   }
 }
 
-@media (width <= 650px) {
+@media (width <= 1024px) {
+  #div-ppt {
+    width: 90vw;
+  }
+}
+
+@media (width <= 1145px) {
+  #players-selection {
+    flex-direction: column;
+    margin-top: var(--gh-margin-l);
+  }
+
+  .games-win {
+    margin-top: var(--gh-margin-s);
+  }
+
+  .games-lose {
+    margin-top: 0;
+  }
+}
+
+@media (width <= 600px) {
   #players-selection {
     margin-bottom: var(--gh-margin-l);
   }
@@ -144,7 +160,7 @@ button > img {
   }
 }
 
-@media (width <= 350px) {
+@media (width <= 385px) {
   #title-ppt {
     text-align: center;
     line-height: 2rem;
