@@ -28,38 +28,96 @@
 
 /* MEDIA QUERIES */
 
-@media (width <= 1030px) {
+@media (width <= 1440px) {
   .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
     width: 12rem;
-    height: 19.6rem;
+    height: 19rem;
   }
 
   .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
     width: 12rem;
-    height: 19.6rem;
+    height: 19rem;
   }
 }
 
-@media (width <= 880px) {
+@media (width <= 1024px) {
   .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
-    width: 9rem;
-    height: 9rem;
+    width: 10rem;
+    height: 16rem;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 10rem;
+    height: 16rem;
+  }
+}
+
+@media (width <= 768px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 8rem;
+    height: 13rem;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 8rem;
+    height: 13rem;
+  }
+}
+
+/* @media (width <= 880px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 10rem;
+    height: 15rem;
   }
 
   .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
     width: 10rem;
     height: 15rem;
   }
-}
+} */
 
-@media (width <= 610px) {
+/* @media (width <= 675px) {
   .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
-    width: 6rem;
-    height: 11rem;
+    width: 5rem;
+    height: 8rem;
   }
 
   .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
-    width: 6rem;
-    height: 11rem;
+    width: 5rem;
+    height: 8rem;
+  }
+} */
+@media (width <= 426px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 5rem;
+    height: 7.8rem;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 5rem;
+    height: 7.8rem;
   }
 }
+
+@media (width <= 321px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 4rem;
+    height: 6.5rem;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 4rem;
+    height: 6.5rem;
+  }
+}
+/* @media (width <= 380px) {
+  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
+    width: 4rem;
+    height: 7rem;
+  }
+
+  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
+    width: 4rem;
+    height: 7rem;
+  }
+} */
