@@ -108,7 +108,7 @@
   }
 }
 
-@media (width <= 250px) {
+@media (width <= 320px) {
   .card-on {
     width: 3rem;
     height: 5rem;
