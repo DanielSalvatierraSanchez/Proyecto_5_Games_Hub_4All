@@ -3,14 +3,14 @@
 export const voiceOfNumbers = (randomNumber) => {
   const numbers = new SpeechSynthesisUtterance(randomNumber);
   numbers.pitch = 2;
-  numbers.rate = 0.5;
+  //numbers.rate = 0.5;
   speechSynthesis.speak(numbers);
 };
 
 export const voiceOfStart = () => {
   const startGame = new SpeechSynthesisUtterance("Vamos a comenzar");
   startGame.pitch = 2;
-  startGame.rate = 0.7;
+  //startGame.rate = 0.7;
   speechSynthesis.speak(startGame);
 };
 
