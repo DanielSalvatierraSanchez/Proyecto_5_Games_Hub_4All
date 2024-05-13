@@ -1,5 +1,5 @@
-import { menuOfButtonsOfReset } from "../../../../utils/menuButtonsOfBingo";
-import { voiceOfReset } from "../../../../utils/voiceOfBingo";
+import { menuOfButtonsOfReset } from "../../../../utils/function/menuButtonsOfBingo";
+import { voiceOfReset } from "../../../../utils/function/voiceOfBingo";
 import { createBingo } from "../bingo";
 import { nextNumber } from "../PlayBingo/playBingo";
 

@@ -1,5 +1,5 @@
-import { menuOfButtonsOfPause } from "../../../../utils/menuButtonsOfBingo";
-import { voiceOfPause } from "../../../../utils/voiceOfBingo";
+import { menuOfButtonsOfPause } from "../../../../utils/function/menuButtonsOfBingo";
+import { voiceOfPause } from "../../../../utils/function/voiceOfBingo";
 import { nextNumber } from "../PlayBingo/playBingo";
 
 // crear funcion para evento del BUTTON PAUSE

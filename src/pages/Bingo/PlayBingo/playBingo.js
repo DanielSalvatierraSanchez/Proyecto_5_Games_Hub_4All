@@ -1,8 +1,8 @@
 import './playBingo.css';
 import { updateBallsClass } from "../TabletOfBalls/tabletOfBalls";
-import { voiceOfContinue, voiceOfNumbers, voiceOfStart } from '../../../../utils/voiceOfBingo';
-import { menuOfButtonsOfPlay } from '../../../../utils/menuButtonsOfBingo';
-import { finishedBingo } from '../../../../utils/finishedBingo';
+import { voiceOfContinue, voiceOfNumbers, voiceOfStart } from '../../../../utils/function/voiceOfBingo';
+import { menuOfButtonsOfPlay } from '../../../../utils/function/menuButtonsOfBingo';
+import { finishedBingo } from '../../../../utils/function/finishedBingo';
 
 
 export let nextNumber;
@@ -22,7 +22,6 @@ export const playBingo = (play, pause, reset) => {
       voiceOfContinue();
     } else { voiceOfStart(randomNumber);
     };
-
     // crear intervalo entre una bola y otra
     nextNumber = setInterval(() => {
       // crear DO WHILE ejecuta una VAR creando un numero random y se comprueba si tiene ese numero random y si no se lo añade

@@ -7,7 +7,7 @@
 }
 
 .image-the-end {
-  margin: 0 3rem;
+  margin: 0 var(--gh-margin-l);
   width: 6rem;
   height: 6rem;
 }
@@ -17,7 +17,6 @@
 
 @media (width <= 815px) {
   .image-the-end {
-    margin: 0 3rem;
     width: 3rem;
     height: 3rem;
   }
@@ -27,7 +26,7 @@
   .the-end {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: var(--gh-gap-xxl);
     line-height: 3rem;
   }
 }
