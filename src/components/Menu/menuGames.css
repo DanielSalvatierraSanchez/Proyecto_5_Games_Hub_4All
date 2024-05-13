@@ -64,29 +64,6 @@
   }
 }
 
-/* @media (width <= 880px) {
-  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
-    width: 10rem;
-    height: 15rem;
-  }
-
-  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
-    width: 10rem;
-    height: 15rem;
-  }
-} */
-
-/* @media (width <= 675px) {
-  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
-    width: 5rem;
-    height: 8rem;
-  }
-
-  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
-    width: 5rem;
-    height: 8rem;
-  }
-} */
 @media (width <= 426px) {
   .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
     width: 5rem;
@@ -110,14 +87,3 @@
     height: 6.5rem;
   }
 }
-/* @media (width <= 380px) {
-  .menu-game-memory, .menu-game-ppt, .menu-game-bingo {
-    width: 4rem;
-    height: 7rem;
-  }
-
-  .image-menu-game-memory, .image-menu-game-ppt, .image-menu-game-bingo {
-    width: 4rem;
-    height: 7rem;
-  }
-} */

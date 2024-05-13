@@ -25,8 +25,8 @@ footer {
 }
 
 a > .img-email, .img-github, .img-linkedin {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   transition: all 1s;
 }
 
@@ -36,8 +36,8 @@ a > .img-email, .img-github, .img-linkedin {
 }
 
 .link-email, .link-github, .link-linkedin {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   transition: all 1s;
 }
 

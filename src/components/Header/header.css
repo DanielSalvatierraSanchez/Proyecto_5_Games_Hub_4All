@@ -37,30 +37,14 @@
   }
 }
 
-/* @media (width <= 880px) {
-  .title-header {
-    font-size: x-large;
-  }
-} */
 @media (width <= 426px) {
   .title-header {
     font-size: medium;
   }
 }
-/* @media (width <= 500px) {
-  .title-header {
-    font-size: large;
-  }
-} */
 
 @media (width <= 376px) {
   .title-header {
     font-size: small;
   }
 }
-/* 
-@media (width <= 250px) {
-  .title-header {
-    margin: 0rem 4rem;
-  }
-} */
