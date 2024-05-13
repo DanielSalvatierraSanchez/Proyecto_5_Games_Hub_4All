@@ -15,8 +15,8 @@
 }
 
 .card-on {
-  width: 120px;
-  height: 150px;
+  width: 7.3rem;
+  height: 9rem;
   object-fit: contain;
   border-radius: var(--gh-border-m);
   background-color: var(--gh-background-primary);

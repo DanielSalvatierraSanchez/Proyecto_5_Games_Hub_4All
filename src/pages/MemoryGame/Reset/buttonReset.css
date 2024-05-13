@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 100px;
+  width: 9rem;
+  height: 6rem;
   margin-top: var(--gh-margin-s);
   margin-bottom: var(--gh-margin-s);
   padding: var(--gh-padding-xxs);
@@ -32,24 +32,24 @@
 
 @media (width <= 1250px) {
   .button-reset {
-    width: 120px;
-    height: 80px;
+    width: 7.3rem;
+    height: 5rem;
     font-size: x-small;
   }
 }
 
 @media (width <= 920px) {
   .button-reset {
-    width: 100px;
-    height: 60px;
+    width: 6rem;
+    height: 4rem;
     font-size: xx-small;
   }
 }
 
 @media (width <= 520px) {
   .button-reset {
-    width: 80px;
-    height: 50px;
+    width: 5rem;
+    height: 3rem;
     margin-left: var(--gh-margin-xs);
     margin-right: var(--gh-margin-s);
     font-size: 45%;
