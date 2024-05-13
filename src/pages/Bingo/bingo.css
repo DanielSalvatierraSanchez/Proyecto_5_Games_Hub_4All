@@ -53,6 +53,7 @@
   align-items: center;
   width: 30rem;
   height: 9rem;
+  margin-bottom: var(--gh-margin-m);
 }
 
 button {
@@ -76,7 +77,7 @@ button {
 
 /* MEDIA QUERIES */
 
-@media (width <= 1000px) {
+@media (width <= 1024px) {
   #actual-ball {
     width: 12rem;
     height: 12rem;
@@ -89,17 +90,17 @@ button {
   }
 
   #table-balls {
-    grid-template-columns: repeat(10, 3.3rem);
+    grid-template-columns: repeat(10, 3.5rem);
   }
 }
 
-@media (width <= 790px) {
+@media (width <= 850px) {
   #bingo-container {
-    flex-direction: column;
-    padding: 0;
+    flex-direction: column;;
   }
 
   #actual-ball {
+    margin-bottom: 2rem;
     width: 9rem;
     height: 9rem;
   }
@@ -109,12 +110,22 @@ button {
     height: 7.6rem;
     font-size: 3rem;
   }
+
+  #table-balls {
+    grid-template-columns: repeat(10, 3rem);
+    border-radius: var(--gh-border-s);
+  }
 }
 
 @media (width <= 525px) {
   #table-balls {
-    grid-template-columns: repeat(10, 2rem);
-    border-radius: var(--gh-border-s);
+    grid-template-columns: repeat(10, 2.5rem);
+    border-radius: var(--gh-border-xs);
+  }
+
+  #actual-ball {
+    width: 9rem;
+    height: 9rem;
   }
 
   .play-button, .pause-button, .reset-button {
@@ -124,7 +135,12 @@ button {
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 415px) {
+  #table-balls {
+    grid-template-columns: repeat(10, 2rem);
+    border-radius: var(--gh-border-xs);
+  }
+
   .play-button, .pause-button, .reset-button {
   width: 6rem;
   height: 3rem;
@@ -134,7 +150,7 @@ button {
 
 @media (width <= 355px) {
   #table-balls {
-    grid-template-columns: repeat(10, 2rem);
+    grid-template-columns: repeat(10, 1.5rem);
     border-radius: var(--gh-border-xs);
   }
 }
