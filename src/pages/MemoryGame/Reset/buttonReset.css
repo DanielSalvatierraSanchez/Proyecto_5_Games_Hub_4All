@@ -5,7 +5,7 @@
   width: 150px;
   height: 100px;
   margin-top: var(--gh-margin-s);
-  margin-bottom: var(--gh-margin-xs);
+  margin-bottom: var(--gh-margin-s);
   padding: var(--gh-padding-xxs);
   background-color: var(--gh-color-final);
   color: var(--gh-color-primary);
