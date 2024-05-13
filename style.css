@@ -118,7 +118,7 @@ body {
 @media (width <= 675px) {
   #app {
     height: 80vh;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   #app > a {
