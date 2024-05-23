@@ -72,7 +72,7 @@
 }
 
 html {
-  background-image: url("./screen.webp");
+  background-image: url("./public/screen.webp");
   background-size: cover;
 }
 
