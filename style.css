@@ -80,7 +80,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: var(--gh-font-arcade);
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #app {
