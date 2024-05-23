@@ -72,7 +72,7 @@
 }
 
 html {
-  background-image: url("/screen.webp");
+  background-image: url("./screen.webp");
   background-size: cover;
 }
 
@@ -118,7 +118,7 @@ body {
 @media (width <= 675px) {
   #app {
     height: 80vh;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   #app > a {
@@ -131,7 +131,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 80vh;
-    margin: 5rem;
+    margin: 2rem;
     gap: 0;
   }
 }
