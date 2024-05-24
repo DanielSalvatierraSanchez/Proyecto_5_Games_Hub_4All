@@ -1,0 +1,8 @@
+.play-win, .play-lose {
+  margin-top: 30vh;
+  color: var(--gh-color-tertiary);
+  text-shadow: var(--gh-text-neon);
+  cursor: no-drop;
+  text-align: center;
+  line-height: 4rem;
+}
