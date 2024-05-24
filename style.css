@@ -2,18 +2,11 @@
 
 :root {
   /*FONT*/
-  --gh-font-arcade: "Press Start 2P";
+  --gh-font-arcade: 'Press Start 2P';
 
   /*TEXT STYLE*/
-  --gh-text-neon: 
-  0 0 5px #fff,
-  0 0 10px #fff,
-  0 0 20px #fff,
-  0 0 40px #0ff,
-  0 0 80px #0ff,
-  0 0 90px #0ff,
-  0 0 100px #0ff,
-  0 0 150px #0ff;
+  --gh-text-neon: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
 
   /*COLORS*/
   --gh-color-primary: #ffffff;
@@ -68,11 +61,11 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none; 
+  list-style: none;
 }
 
 html {
-  background-image: url("../screen.webp");
+  background-image: url('../screen.webp');
   background-size: cover;
 }
 
@@ -105,7 +98,6 @@ body {
   height: 90vh;
   margin: 5rem 0;
 }
-
 
 /* MEDIA QUERIES */
 
